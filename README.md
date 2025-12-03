@@ -56,7 +56,7 @@ Prerequisite: Python 3.10 is required.
 
 1. **Launch the Application**
 ```bash
-python src/app.py
+python desktop_app/app.py
 ```
 2. **Index your Library**
 When you open the app for the first time, the database will be empty.
