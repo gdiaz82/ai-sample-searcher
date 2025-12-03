@@ -80,18 +80,21 @@ When you open the app for the first time, the database will be empty.
 - Drag and Drop the result directly from the list into your DAW (Ableton, FL Studio, etc.).
 
 
-## Roadmap
-- [x] Core Semantic Search Engine
+## Cloud Web Demo
 
-- [x] Local Vector DB Persistence
+I have deployed a lightweight version of the search engine to the cloud, with a small only snare database.
 
-- [x] PyQt6 GUI with Drag & Drop
+> **[🔴 Try the Live API Demo Here](https://sample-api-284683380712.us-central1.run.app/docs)**
 
-- [x] Built-in Audio Player (Preview before drag)
+### Cloud Architecture
+Unlike the desktop app which indexes your local files, this microservice runs in a containerized environment with a pre-indexed database of 14 snare samples.
 
-- [ ] File Watcher (Auto-index new files)
-
-- [ ] Metadata Filtering (Filter by BPM or Key)
+### How to test the API:
+1. Click the link above.
+2. Click on the **POST /search** endpoint.
+3. Click **"Try it out"**.
+4. Enter a query in the JSON body, e.g.: `{"query": "snare with light reverb"}`
+5. Click **Execute** to see the AI results.
 
 ## License
 This project uses the LAION-CLAP model. Please refer to their repository for model licensing details.
